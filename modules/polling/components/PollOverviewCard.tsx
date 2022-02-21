@@ -146,14 +146,8 @@ export default function PollOverviewCard({
               >
                 <InternalLink href={`/polling/${poll.slug}`} variant="nostyle">
                   <Button
-                    variant="outline"
-                    sx={{
-                      display: reviewPage ? 'none' : undefined,
-                      borderColor: 'onSecondary',
-                      color: 'secondaryAlt',
-                      borderRadius: 'small',
-                      ':hover': { color: 'text', borderColor: 'onSecondary', backgroundColor: 'background' }
-                    }}
+                    variant="nftBtn"
+                    sx={{ display: reviewPage ? 'none' : undefined, }}
                   >
                     View Details
                   </Button>

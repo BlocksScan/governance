@@ -52,7 +52,7 @@ const MyApp = ({ Component, pageProps }: AppProps): React.ReactElement => {
               sx={{
                 flexDirection: 'column',
                 variant: 'layout.root',
-                px: [3, 4]
+                // px: [3, 4]
               }}
             >
               <Header />

@@ -36,22 +36,23 @@ const PollingIndicator = forwardRef<HTMLAnchorElement, Props>(
       <NavLink
         ref={ref}
         href={`/polling?network=${getNetwork()}`}
-        sx={{
-          fontSize: 2,
-          px: '3',
-          borderRadius: 'round',
-          border: '1px solid',
-          borderColor: 'primary',
-          color: 'surface',
-          alignItems: 'center',
-          backgroundColor: 'primary',
-          display: 'inline-flex',
-          '&:hover': {
-            backgroundColor: 'primaryEmphasis',
-            color: 'surface'
-            // '> svg': { color: 'primary' }
-          }
-        }}
+        variant="btn"
+        // sx={{
+        //   fontSize: 2,
+        //   px: '3',
+        //   borderRadius: 'round',
+        //   border: '1px solid',
+        //   borderColor: 'primary',
+        //   color: 'surface',
+        //   alignItems: 'center',
+        //   backgroundColor: 'primary',
+        //   display: 'inline-flex',
+        //   '&:hover': {
+        //     backgroundColor: 'primaryEmphasis',
+        //     color: 'surface'
+        //     // '> svg': { color: 'primary' }
+        //   }
+        // }}
         {...props}
       >
         <Badge mr="3" variant="circle" p="3px">

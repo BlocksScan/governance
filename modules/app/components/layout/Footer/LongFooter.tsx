@@ -103,7 +103,8 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
         pt: 5,
         pb: 3,
         width: '100%',
-        backgroundColor: 'background'
+        maxWidth: '100%',
+        backgroundColor: 'footerText'
       }}
     >
       <Grid
@@ -117,10 +118,10 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
             <Box
               as="div"
               sx={{
-                fontWeight: '500',
+                fontWeight: '600',
                 marginBottom: '0.2rem',
-                color: 'text',
-                fontSize: 14.3
+                color: 'white',
+                fontSize: 16
               }}
             >
               {group.header}
@@ -130,10 +131,10 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
               sx={{
                 paddingLeft: 0,
                 listStyle: 'none',
-                lineHeight: '2.1rem',
+                lineHeight: '1.5rem',
                 fontSize: 14,
                 '& a': {
-                  color: 'textSecondary',
+                  color: 'textLight',
                   fontWeight: '400',
                   transition: 'color 0.2s ease-out',
                   textDecoration: 'none',
@@ -175,7 +176,7 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
             }}
           >
             <ThemeUILink
-              sx={{ color: 'text' }}
+              sx={{ color: 'textLight' }}
               href="https://twitter.com/MakerDAO"
               title="Twitter"
               target="_blank"
@@ -184,7 +185,7 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
               <Icon name="twitter" />
             </ThemeUILink>
             <ThemeUILink
-              sx={{ color: 'text' }}
+              sx={{ color: 'textLight' }}
               href="https://www.reddit.com/r/MakerDAO/"
               title="Reddit"
               target="_blank"
@@ -193,7 +194,7 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
               <Icon name="reddit" />
             </ThemeUILink>
             <ThemeUILink
-              sx={{ color: 'text' }}
+              sx={{ color: 'textLight' }}
               href="https://t.me/makerdaoOfficial"
               title="Telegram"
               target="_blank"
@@ -202,7 +203,7 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
               <Icon name="telegram" />
             </ThemeUILink>
             <ThemeUILink
-              sx={{ color: 'text' }}
+              sx={{ color: 'textLight' }}
               href="https://www.youtube.com/MakerDAO"
               title="Youtube"
               target="_blank"
@@ -211,7 +212,7 @@ export default function LongFooter({ locale = 'en' }: { locale?: string }): Reac
               <Icon name="youtube" />
             </ThemeUILink>
             <ThemeUILink
-              sx={{ color: 'text' }}
+              sx={{ color: 'textLight' }}
               href="https://discord.gg/tQ5wnN6Ms4"
               title="Discord"
               target="_blank"

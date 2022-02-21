@@ -50,6 +50,11 @@ export function HeadComponent({
           "img-src 'self' https: data:"
         }
       />
+      <link href="/css/master.css" rel="stylesheet" key="test"/>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=optional"
+        rel="stylesheet"
+      />
     </Head>
   );
 }
