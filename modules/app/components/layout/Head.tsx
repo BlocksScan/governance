@@ -40,10 +40,10 @@ export function HeadComponent({
         httpEquiv="Content-Security-Policy"
         content={
           "default-src 'none';" +
-          'frame-src https://connect.trezor.io https://www.youtube-nocookie.com https://player.vimeo.com;' +
-          "font-src 'self';" +
+          'frame-src https://connect.trezor.io https://www.youtube-nocookie.com https://player.vimeo.com https://fonts.googleapis.com https://fonts.gstatic.com;' +
+          "font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;" +
           "connect-src http://localhost:8545/ 'self' https: wss:;" +
-          "style-src 'self' 'unsafe-inline';" +
+          "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;" +
           `script-src 'self' ${
             dev ? "'unsafe-eval'" : ''
           } 'sha256-a0L6Pfwt+Nftvey0NflqMTGt/tO5UMFmI/PAiNnoYRo=';` +
