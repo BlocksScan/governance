@@ -7,7 +7,7 @@ export const getVoteColor = (optionId: number, voteType: string): string => {
 
   const colors = {
     0: '#708390',
-    1: '#1AAB9B',
+    1: '#2794e9',
     2: '#F77249'
   };
 

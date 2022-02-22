@@ -24,6 +24,7 @@ const PrimaryLayout = ({
           width: '100%',
           flexDirection: 'column',
           minHeight: '100vh',
+          padding: '0 32px',
           animation: fade ? `${fadeIn} 350ms ease` : undefined
         }}
         {...props}

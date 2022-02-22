@@ -39,22 +39,19 @@ export function HeadComponent({
       <meta
         httpEquiv="Content-Security-Policy"
         content={
-          "default-src 'none';" +
+          'default-src \'none\';' +
           'frame-src https://connect.trezor.io https://www.youtube-nocookie.com https://player.vimeo.com https://fonts.googleapis.com https://fonts.gstatic.com;' +
-          "font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com;" +
-          "connect-src http://localhost:8545/ 'self' https: wss:;" +
-          "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com;" +
+          'font-src \'self\' https://fonts.googleapis.com https://fonts.gstatic.com;' +
+          'connect-src http://localhost:8545/ \'self\' https: wss:;' +
+          'style-src \'self\' \'unsafe-inline\' https://fonts.googleapis.com https://fonts.gstatic.com;' +
           `script-src 'self' ${
-            dev ? "'unsafe-eval'" : ''
+            dev ? '\'unsafe-eval\'' : ''
           } 'sha256-a0L6Pfwt+Nftvey0NflqMTGt/tO5UMFmI/PAiNnoYRo=';` +
-          "img-src 'self' https: data:"
+          'img-src \'self\' https: data:'
         }
       />
       <link href="/css/master.css" rel="stylesheet" key="test"/>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=optional"
-        rel="stylesheet"
-      />
+      <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     </Head>
   );
 }

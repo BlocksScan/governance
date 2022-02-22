@@ -137,8 +137,8 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
         <AreaChart data={data || []} margin={{ bottom: 66, left: 20, right: 20, top: 10 }}>
           <defs>
             <linearGradient id="gradientFront" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#1AAB9B" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#1AAB9B" stopOpacity={0} />
+              <stop offset="5%" stopColor="#2794e9" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#2794e9" stopOpacity={0} />
             </linearGradient>
           </defs>
 
@@ -180,9 +180,9 @@ export function DelegateMKRChart({ delegate }: { delegate: Delegate }): React.Re
 
           <Area
             dataKey="MKR"
-            stroke={'#1AAB9B'}
+            stroke={'#2794e9'}
             type="monotone"
-            // dot={{ stroke: '#1AAB9B', strokeWidth: 2 }}
+            // dot={{ stroke: '#2794e9', strokeWidth: 2 }}
             fill="url(#gradientFront)"
           />
 

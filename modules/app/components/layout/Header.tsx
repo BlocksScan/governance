@@ -23,7 +23,7 @@ const Header = (): JSX.Element => {
       as="header"
       pt={3}
       pb={[4, 5]}
-      px={[2, 0]}
+      px={[2, 4]}
       variant="styles.header"
       sx={{
         display: 'flex',
